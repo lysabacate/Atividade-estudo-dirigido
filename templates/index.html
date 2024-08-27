@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Push e Pop</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/script.js"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <h2>Adicionar Alunos com Push e Pop</h2>
+        <p id="lista"></p>
+        
+        <div class="flax">
+            <form onsubmit="adicionarAluno(event)">
+                <input type="text" id="aluno" placeholder="Digite o aluno">
+                <button type="submit">Adicionar</button>
+            </form>
+            <div class="button-container">
+                <button onclick="desfazer()">Desfazer</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

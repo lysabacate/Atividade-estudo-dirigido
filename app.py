@@ -4,4 +4,6 @@ import json
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'abuble'
 
-app.route('/')
+@app.route('/')
+def pagina():
+    return render_template('index.html')
